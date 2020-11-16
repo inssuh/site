@@ -52,10 +52,8 @@ body {
 h2 {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Roboto Mono', monospace, sans-serif;
-    letter-spacing: 0.5px;
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
     opacity: 70%;
 }
@@ -103,7 +101,7 @@ h1 {
     margin: 0;
     margin-bottom: 12px;
     padding: 0;
-    font-family: 'Roboto Mono', monospace, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 500;
     font-size: 22px;
 }
@@ -132,6 +130,7 @@ span {
 .linkinfo {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .alinks { 
@@ -139,7 +138,11 @@ span {
     text-decoration: none;
 }
 
-.alinks:hover {
+li:hover {
+    color: rgb(20, 148, 228);
+}
+
+li:hover > .alinks {
     color: rgb(20, 148, 228);
 }
 
@@ -147,6 +150,7 @@ ul {
     padding: 0;
     margin: 0;
     margin-left: 16px;
+    margin-top: -6px;
 }
 
 li {
