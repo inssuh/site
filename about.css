@@ -53,7 +53,7 @@ h2 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto Mono', monospace, sans-serif;
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -73,35 +73,20 @@ h2 {
     display: flex;
     margin-top: 10vh;
     width: 100%;
-    flex-direction: column;
-}
-
-.profile {
-    overflow: hidden;
-    width: 20vw;
-    height: 20vw;
-    margin-right: 30px;
-}
-
-img {
-    width: 100%;
 }
 
 .intro {
     display: flex;
     margin-top: 30px;
-    width: 100%;
-}
-
-.biocontent {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 180px;
+    margin-left: 30px;
     width: 50%;
+    height: 40vh;
+    flex-direction: column; 
 }
 
 h1 {
     margin: 0;
-    margin-bottom: 12px;
     padding: 0;
     font-family: 'Roboto Mono', monospace, sans-serif;
     font-weight: 500;
@@ -113,46 +98,19 @@ span {
 }
 
 .bio {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 22px;
     font-size: 16px;
 }
 
-#dLine2 {
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    opacity: 20%;
-    margin-bottom: 30px;
+.profile {
     margin-top: 30px;
+    overflow: hidden;
+    width: 40vh;
+    height: 40vh;
 }
 
-.linkinfo {
-    display: flex;
-    flex-direction: column;
-}
-
-.alinks { 
-    color: black;
-    text-decoration: none;
-}
-
-.alinks:hover {
-    color: rgb(20, 148, 228);
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    margin-left: 16px;
-}
-
-li {
-    list-style-type: square;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-bottom: 3px;
+img {
+    width: 100%;
 }
