@@ -156,3 +156,9 @@ li:hover {
 li:hover > .alinks {
     color: rgb(20, 148, 228);
 }
+
+@media (max-width: 750px) {
+    .biocontent {
+        width: 100%;
+    }
+}

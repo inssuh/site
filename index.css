@@ -120,6 +120,7 @@ span {
 
 .projectstext {
     display: flex;
+    margin-right: 30px;
     flex-direction: column;
     width: 40vw;
     transition: all 0.2s ease-in-out;
@@ -145,4 +146,10 @@ span {
 img {
     width: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 750px) {
+    .projectstext {
+        width: 100%;
+    }
 }
