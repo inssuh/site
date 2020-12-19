@@ -5,17 +5,19 @@ body {
 
 .container {
     display: flex;
-    width: 90%;
+    width: 90vw;
     margin: auto;
+    align-items: center;
     flex-direction: column;
 }
 
 .topnav {
     display: flex;
-    width: 100%;
+    width: 90vw;
     height: 10vh;
     justify-content: flex-start;
     position: fixed;
+    background-color: white;
 }
 
 .logo {
@@ -23,12 +25,12 @@ body {
     width: 80px;
     height: 100%;
     align-items: center;
-    justify-content: flex-start;
 }
 
 #inlogo {
     width: 60%;
     opacity: 70%;
+    transition: all 0.2s ease-in-out;
 }
 
 #inlogo:hover {
@@ -50,7 +52,7 @@ body {
     justify-content: flex-end;
 }
 
-h2 {
+.navtext {
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -61,6 +63,7 @@ h2 {
 #linknav {
     text-decoration: none;
     color: black;
+    transition: all 0.2s ease-in-out;
 }
 
 #linknav:hover {
@@ -77,11 +80,9 @@ h2 {
 .intro {
     display: flex;
     margin-top: 30px;
-    margin-bottom: 180px;
-    width: 50%;
-    height: 30px;
+    width: 100%;
+    height: 10vh;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 h1 {
@@ -101,4 +102,47 @@ span {
     height: 1px;
     background-color: black;
     opacity: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.projects:hover .projectstext {
+    color: rgb(20, 148, 228);
+}
+
+.projectstext {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.bio {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.mediasection {
+    display: flex;
+    width: 400px;
+    height: 30vh;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
 }
