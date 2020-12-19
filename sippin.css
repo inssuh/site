@@ -151,3 +151,17 @@ img {
     object-fit: contain;
     outline: 1px solid white;
 }
+
+@media (max-width: 750px) {
+    .mediasection {
+        width: 100%;
+    }
+
+    .storyboard {
+        width: 100%;
+    }
+
+    img{
+        width: 33%;
+    }
+}
