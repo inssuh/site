@@ -18,6 +18,7 @@ body {
     justify-content: flex-start;
     position: fixed;
     background-color: white;
+    z-index: 2;
 }
 
 .logo {
