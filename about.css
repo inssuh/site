@@ -170,4 +170,8 @@ li:hover > .alinks {
     img {
         width: 100%;
     }
+
+    #dLine2 {
+        width: 100%;
+    }
 }
