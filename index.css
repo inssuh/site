@@ -107,6 +107,16 @@ span {
     margin-bottom: 30px;
 }
 
+#dLineEnd {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;

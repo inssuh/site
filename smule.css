@@ -115,6 +115,20 @@ span {
     margin-bottom: 30px;
 }
 
+#dLine3 {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 20%;
+}
+
+#dLineEnd {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -124,13 +138,23 @@ span {
     justify-content: center;
 }
 
-.mediasection {
+.storyboard {
     display: flex;
-    width: 80%;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 100%;
 }
 
-video {
+.mediasection {
+    display: flex;
     width: 100%;
+    background-color: black;
+    justify-content: center;
+}
+
+#hiF {
+    display: flex;
+    justify-content: center;
 }
 
 .projectstext {
@@ -139,21 +163,22 @@ video {
     width: 40vw;
 }
 
-.storyboard {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    width: 80%;
-    margin-bottom: 10vh;
-}
-
-img {
+.collage {
     width: 25%;
     object-fit: contain;
     outline: 1px solid white;
 }
 
+.single {
+    width: 80%;
+    object-fit: contain;
+}
+
 @media (max-width: 750px) {
+    .intro {
+        width: 100%;
+    }
+
     .mediasection {
         width: 100%;
     }
@@ -162,7 +187,8 @@ img {
         width: 100%;
     }
 
-    img{
+    .collage {
         width: 33%;
     }
+
 }
