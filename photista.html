@@ -3,143 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="photista.css">
+    <title>Photista</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>In Seok Suh - Sippin</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat+Alternates&family=Oswald&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="topnav">
-            <div class="logo">
-                <a id="inlogo" href="index.html"> <svg version="1.1" x="0px" y="0px" viewBox="0 0 720 720"
-                        style="enable-background:new 0 0 720 720;" xml:space="preserve">
-                        <g>
-                            <rect x="0.1" y="0.41" width="89.95" height="719.59" />
-                            <rect x="389.6" y="73.03"
-                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -178.7684 434.0646)" width="89.95"
-                                height="719.59" />
-                        </g>
-                    </svg> </a>
-            </div>
 
-            <div id="dLine"></div>
+    <button onclick="changeColor(c)" id="logolink">
+        <svg id="logoid" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+            <style type="text/css">
+                #st0 {
+                    fill: none;
+                    stroke: #212121;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
 
-            <div class="about">
-                <a id="linknav" href="about.html">
-                    <div class="navtext">About</div>
-                </a>
-            </div>
+                #st1,
+                #st2,
+                #st3 {
+                    fill: none;
+                    stroke: #212121;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+            <g>
+                <path id="st0" d="M173.2,427.24L173.2,427.24c-70.29-70.29-70.29-184.26,0-254.56l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0
+c70.29,70.29,70.29,184.26,0,254.56l0,0C357.46,497.53,243.49,497.53,173.2,427.24z" />
+                <path id="st1"
+                    d="M427.76,427.24L300.48,299.96l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0L427.76,427.24z" />
+                <path id="st2"
+                    d="M173.2,427.24L173.2,427.24l127.28-127.28l127.28,127.28l0,0C357.46,497.53,243.49,497.53,173.2,427.24z" />
+                <path id="st3" d="M173.2,427.24L45.92,299.96l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0L173.2,427.24z" />
+            </g>
+        </svg>
+    </button>
 
+    <button onclick="show_hide(a)" id="navButton">
+        <h3 id="navbuttonText">Menu</h3>
+    </button>
+
+    <div id="nav">
+        <div id="menuTitle"> <span id="photistapan">Photista</span>
+            <button onclick="show_hide(a)" id="exit">
+                <svg id="exitsvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img">
+                    <title>Exit</title>
+                    <desc>A solid styled icon from Orion Icon Library.</desc>
+                    <path data-name="layer1" fill="#212121"
+                        d="M51 17.25L46.75 13 32 27.75 17.25 13 13 17.25 27.75 32 13 46.75 17.25 51 32 36.25 46.75 51 51 46.75 36.25 32 51 17.25z" />
+                </svg>
+            </button>
         </div>
 
-        <div class="contentbody">
-            <div class="intro">
-                <h1>Photista</h1>
-                <p class="bio">Photista <span>2020</span> is a series of mini projects exploring the topic of marine algae. The name Photista is a combination of two 
-                    words: Photosynthesis <span>/ˌfōdōˈsinTHəsəs/</span> and Protista <span>/prōˈtistə/</span>.</p>
-                <p class="bio">Photosynthesis <span>noun</span> is the process by which green plants and some other organisms use sunlight to synthesize foods from carbon dioxide 
-                    and water. Photosynthesis in plants generally involves the green pigment chlorophyll and generates oxygen as a byproduct.</p>
-                <p class="bio">Protista <span>noun</span> is a kingdom or large grouping that comprises mostly single-celled organisms such as the protozoa, simple algae and fungi, 
-                    slime molds, and (formerly) the bacteria. They are now divided among up to thirty phyla, and some have both plant and animal characteristics.</p>
-            </div>
-
-            <div id="dLine1"></div>
-
-            <div class="projects">
-                <div class="mediasection">
-                    <img src="images/photista/stilllife2.png" alt="">
-                </div>
-                <div class="mediatext">
-                    <h1>Semiotic Still Life</h1>
-                    <p class="bio"><b>Medium:</b> <span>Cinema4D, 16:9</span></p>
-                    <p class="bio"><b>Themes:</b> <span>Research, Algae, Hosts, Consumption</span></p>
-                    <p class="bio">The choice to use 3D modeling as the medium was to represent that this field of
-                        research is difficult to access depending on the
-                        location. Most of the data is collected by researchers and scientists who have the equipment to
-                        analyze these macro and micro species.</p>
-                    <p class="bio">The anemone and the coral in the still life represents the organisms that algae deem
-                        as hosts. These organisms require the nutrients
-                        provided by photosynthetic algae to survive. The plant and bowl represent consumption by people
-                        and other organisms (Algae are primary producers).
-                        The bowl of kelp represents the common macroalgae that can be found ranging from life in the
-                        oceans, to our food markets, and health products.</p>
-                </div>
-            </div>
-
-            <div id="dLine2"></div>
-
-            <div class="projects">
-                <div class="mediasection">
-                    <img src="images/photista/flag.png" alt="">
-                    <img src="images/photista/flagRender.jpg" alt="">
-                </div>
-                <div class="mediatext">
-                    <h1>Flag</h1>
-                    <p class="bio"><b>Medium:</b> <span>Illustrator, Figma</span></p>
-                    <p class="bio"><b>Themes:</b> <span>Modular, Photosynthesis, Algae</span></p>
-                    <p class="bio">The flag prompt helped me to focus on how to create a system of design that is clear
-                        and easy to replicate. I have 11 steps here to
-                        recreate this exact design in illustrator or figma. Overall, this project helped me to think
-                        about: “How can we use design as a tool for
-                        teaching?”</p>
-                    <p class="bio"><b>Photista Flag: 11 Steps in Illustrator and Figma</b></p>
-                    <p class="bio">1. Create a canvas that is 1920 x 1080 px and fill it with the color value #1F587F.
-                    </p>
-                    <p class="bio">2. Create two squares with the color value of #FBDA33 and align them vertically,
-                        select both squares and scale them to fit the top
-                        and bottom of the canvas.</p>
-                    <p class="bio">3. Delete the top square.</p>
-                    <p class="bio">4. Create four little squares with the color value of #4A9339 and scale them
-                        proportionally to fit inside the bottom yellow square.
-                        The four green squares should now be covering the yellow square.</p>
-                    <p class="bio">5. Delete the top left green square.</p>
-                    <p class="bio">6. Select the top right green square and curve its top left corner fully (in
-                        Illustrator pull the corner back fully) (set the
-                        corner radius to 360° in Figma). and repeat with the bottom left green square.</p>
-                    <p class="bio">7. For the bottom right green square, take its bottom right corner and curve it fully
-                        in Illustrator (corner radius to 360° in
-                        Figma).</p>
-                    <p class="bio">8. Now take the main yellow square and curve it proportionally fully on all sides in
-                        Illustrator (set the corner radius of all the
-                        sides to 360° in Figma) the result should be a yellow circle.</p>
-                    <p class="bio">9. Select all three green curved squares and add a 10px stroke with the color value
-                        of #4A9339 (outer-stroke in Illustrator)
-                        (center-stroke in Figma). Change the fill of the squares to be the color value of #1F587F (same
-                        as background).</p>
-                    <p class="bio">10. Now group the shapes we just created (don’t group the blue canvas background) and
-                        align it with the center of the canvas.</p>
-                    <p class="bio">11. Finally, shift + rotate the grouped object clockwise once which is 315° in
-                        Illustrator (set the rotation to -45° in Figma)</p>
-                </div>
-            </div>
-
-            <div id="dLine2"></div>
-
-            <div class="projects">
-                <div class="mediasection">
-                    <img src="images/photista/Horizontal Quote Silent Spring Type Poster - Google Docs.png" alt="">
-                </div>
-                <div class="mediatext">
-                    <h1>Typographic Poster</h1>
-                    <p class="bio"><b>Medium:</b> <span>Google Docs, Photoshop</span></p>
-                    <p class="bio"><b>Themes:</b> <span>Marine Biology, Aphorism</span></p>
-                    <p class="bio">The goal was to create a poster of an aphorism with a common tool, so the poster was created in Google Docs.</p>
-                    <p class="bio">Aphorism <span>/ˈafəˌrizəm/</span> noun is a concise statement of a scientific principle, typically by an ancient classical author.</p>
-                    <p class="bio">The quote is by Rachel Carson (1907–1964), in her book Silent Spring, who was an American marine biologist: <br> 
-                        <b><q>Even in the vast and mysterious reaches of the sea we are brought back to the fundamental truth that nothing lives to itself.</q></b></p>
-                </div>
-            </div>
-
-        </div>
+        <div class="menu"> <a href="index.html" class="navLink">Home</a> </div>
+        <div class="menu"> <a href="ocdiv.html" class="navLink">Oceanic Divisions</a> </div>
+        <div class="menu"> <a href="" class="navLink">Macro Algae</a> </div>
+        <div class="menu"> <a href="" class="navLink">Micro Algae</a> </div>
+        <div id="about"> <a href="" class="navLink">About</a> </div>
 
     </div>
 
-
-
 </body>
+
+<script src="sketch.js"></script>
+
+<script>
+    let a = 1;
+
+    function show_hide() {
+        if (a === 1) {
+            document.getElementById("nav").style.display = "block";
+            document.getElementById("nav").style.opacity = "80%";
+            return a = 0;
+        } else {
+            document.getElementById("nav").style.display = "none";
+            document.getElementById("nav").style.opacity = "0%";
+            return a = 1;
+        }
+    }
+
+    let c = 1;
+
+    function changeColor() {
+        if (c === 1) {
+            document.getElementById("st0").style.stroke = "#f0f0f0";
+            document.getElementById("st1").style.stroke = "#f0f0f0";
+            document.getElementById("st2").style.stroke = "#f0f0f0";
+            document.getElementById("st3").style.stroke = "#f0f0f0";
+            return c = 0;
+        } else {
+            document.getElementById("st0").style.stroke = "#212121";
+            document.getElementById("st1").style.stroke = "#212121";
+            document.getElementById("st2").style.stroke = "#212121";
+            document.getElementById("st3").style.stroke = "#212121";
+            return c = 1;
+        }
+    }
+</script>
 
 </html>
