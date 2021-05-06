@@ -64,7 +64,9 @@ function setup() {
   UI.style('z-index', '1');
   UI.style('width', '12rem');
   UI.style('height', '100vh');
+  UI.style('overflow-y', 'auto');
   UI.position(0, 0);
+  
 
   refButton = createButton("Refresh");
   refButton.position(10, 80);
