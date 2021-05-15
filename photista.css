@@ -105,7 +105,6 @@ body {
 
 #exit:hover {
   opacity: 100%;
-  ;
 }
 
 #exit:hover #exitsvg {
@@ -150,4 +149,11 @@ canvas {
   display: block;
   position: absolute;
   z-index: 0;
+}
+
+@media (max-width: 750px) {
+  #nav {
+    width: 250px;
+  }
+  
 }

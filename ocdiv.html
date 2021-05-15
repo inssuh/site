@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ocdiv.css">
+    <title>Photista: Oceanic Divisions</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat+Alternates&family=Oswald&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <a href="photista.html" id="logolink">
+        <svg id="logoid" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+            <style type="text/css">
+                #st0 {
+                    fill: none;
+                    stroke: rgb(240, 240, 240);
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
+
+                #st1,
+                #st2,
+                #st3 {
+                    fill: none;
+                    stroke: rgb(240, 240, 240);
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+            <g>
+                <path id="st0" d="M173.2,427.24L173.2,427.24c-70.29-70.29-70.29-184.26,0-254.56l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0
+c70.29,70.29,70.29,184.26,0,254.56l0,0C357.46,497.53,243.49,497.53,173.2,427.24z" />
+                <path id="st1"
+                    d="M427.76,427.24L300.48,299.96l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0L427.76,427.24z" />
+                <path id="st2"
+                    d="M173.2,427.24L173.2,427.24l127.28-127.28l127.28,127.28l0,0C357.46,497.53,243.49,497.53,173.2,427.24z" />
+                <path id="st3" d="M173.2,427.24L45.92,299.96l0,0c70.29-70.29,184.26-70.29,254.56,0l0,0L173.2,427.24z" />
+            </g>
+        </svg>
+    </a>
+
+    <button onclick="show_hide(a)" id="navButton">
+        <h3 id="navbuttonText">Menu</h3>
+    </button>
+
+    <div id="nav">
+        <div id="menuTitle"> <span id="photistaTitle">Photista</span>
+            <button onclick="show_hide(a)" id="exit">
+                <svg id="exitsvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img">
+                    <title>Exit</title>
+                    <path data-name="layer1" fill="#212121"
+                        d="M51 17.25L46.75 13 32 27.75 17.25 13 13 17.25 27.75 32 13 46.75 17.25 51 32 36.25 46.75 51 51 46.75 36.25 32 51 17.25z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="menu"> <a href="photista.html" class="navLink">Home</a> </div>
+        <div class="menu"> <a href="ocdiv.html" class="navLink">Oceanic Divisions</a> </div>
+        <div class="menu"> <a href="marinealgae.html" class="navLink">Marine Algae</a> </div>
+        <div class="menu"> <a href="symbiosis.html" class="navLink">Symbiosis</a> </div>
+        <div id="about"> <a href="resources.html" class="navLink">Resources</a> </div>
+
+    </div>
+
+    <div id="topContent">
+        <h1>Oceanic Divisions</h1>
+    </div>
+
+    <div id="mainBody">
+        <div id="mainBody2">
+            <div class="contentSection">
+                <div class="textSection">
+                    <h2 id="leadingHeader">Zones</h2>
+
+                    <p>The word pelagic comes from the Greek word pelagos meaning sea. The pelagic zone encompasses the
+                        entirety of the ocean except for the
+                        coastal areas.</p>
+
+                    <p>The pelagic zone is divided into four main layers or zones. They are the epipelagic, mesopelagic,
+                        bathypelagic, abyssopelagic, and
+                        a special zone that only exists in certain places around the world is named the hadopelagic
+                        zone. Organisms that live on the ocean floor
+                        (regardless of depth) are part of the benthos or the benthic zone. Benthic ecosystems include
+                        coral reefs, seagrass beds, and other systems
+                        in shallow coastal areas and deep hydrothermal vents, the abyssal plain, and other systems in
+                        the deep sea.</p>
+
+                    <h3 class="secondHeader">Epipelagic</h3>
+
+                    <p>The epipelagic, also known as the sunlight zone, is the upper open ocean which receives the most
+                        sunlight.
+                        There is enough sunlight for plants and protists to utilize photosynthesis (the process by which
+                        organisms use sunlight to convert
+                        carbon dioxide into nutrients and oxygen). This zone generally reaches from the sea surface down
+                        to approximately 200 m (650 ft). The
+                        primary producers that exist in this zone are responsible for much of the original food
+                        production of the entire ocean and create at
+                        least 50% of the oxygen in the earth’s atmosphere.</p>
+
+                    <h3 class="secondHeader">Mesopelagic</h3>
+
+                    <p>The mesopelagic, also known as the twilight zone, is the middle open ocean which stretches from
+                        the bottom of the epipelagic
+                        down to the point where sunlight cannot reach. This zone is approximately 1000 m (3300 ft) and
+                        is much larger than the epipelagic zone.
+                        Many of the species of fishes and invertebrates that live here migrate up into shallower,
+                        epipelagic depths to feed, but only under the
+                        cover of night.</p>
+
+                    <h3 class="secondHeader">Bathypelagic</h3>
+
+                    <p>The bathypelagic, also known as the bathyal zone, is the lower open ocean which stretches from
+                        the bottom of the mesopelagic
+                        and the upper bound of this zone is defined by a complete lack of sunlight. This zone is
+                        approximately 4000 m (13000 ft) and is 15 times the
+                        size of the epipelagic zone. This zone is the largest ecosystem on earth and organisms in the
+                        bathypelagic live in complete darkness from
+                        the sun. However, some organisms use bioluminescent light to attract prey or find a mate.</p>
+
+                    <h3 class="secondHeader">Abyssopelagic and Hadopelagic</h3>
+
+                    <p>The abyssopelagic, also known as the abyssal zone, stretches from the bottom of the bathypelagic
+                        to the ocean floor.
+                        This zone stretches approximately 6000 m (19,700 ft) and makes up over 83% of the ocean and
+                        covers 60% of the earth.</p>
+
+                    <p>A special zone that only exists in certain places around the world is named the hadopelagic zone
+                        or the hadal zone. This is
+                        the deepest region of the ocean and lies within the oceanic trenches that occur in the otherwise
+                        flat seafloor. By this definition, all of
+                        the deepest parts of the ocean conclude in the hadopelagic. The southern end of the Mariana
+                        Trench is named Challenger Deep and it is the
+                        deepest known ocean depth which stretches nearly 11,000 m (36,000 ft or almost 7 miles).</p>
+
+                </div>
+
+                <div id="imageSection">
+                    <svg version="1.1" id="oceanSvg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 359 1800"
+                        style="enable-background:new 0 0 359 1800;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #184E63;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st1 {
+                                fill: none;
+                            }
+
+                            .st2 {
+                                fill: #212121;
+                            }
+
+                            .st3 {
+                                font-family: 'Karla';
+                            }
+
+                            .st4 {
+                                font-size: 24px;
+                            }
+
+                            .st5 {
+                                opacity: 0.1;
+                                fill: #184E63;
+                            }
+                        </style>
+                        <path class="st0" d="M0,1800.5" />
+                        <path class="st0" d="M360,1800.5" />
+                        <path class="st0" d="M-4,113.95c0,0,36.22,34.45,100.69,0c0,0,51.87,34.95,100.73,0c0,0,55.34,39.95,103.07,0
+	c0,0,46.71,32.95,62.51,0" />
+                        <line class="st0" x1="358" y1="327.14" x2="1" y2="327.14" />
+                        <line class="st0" x1="358" y1="680.5" x2="1" y2="680.5" />
+                        <line class="st0" x1="358" y1="1151.31" x2="1" y2="1151.31" />
+                        <rect x="63.69" y="36" class="st1" width="232.62" height="42" />
+                        <text transform="matrix(1 0 0 1 140.3164 65.1841)" class="st2 st3 st4">pelagic</text>
+                        <rect x="64.29" y="180" class="st1" width="231.43" height="81" />
+                        <text transform="matrix(1 0 0 1 123.5649 214.2837)">
+                            <tspan x="0" y="0" class="st2 st3 st4">epipelagic</tspan>
+                            <tspan x="24.01" y="28.8" class="st2 st3 st4">200m</tspan>
+                        </text>
+                        <rect x="63.61" y="461" class="st1" width="232.78" height="86" />
+                        <text transform="matrix(1 0 0 1 110.0649 497.7837)">
+                            <tspan x="0" y="0" class="st2 st3 st4">mesopelagic</tspan>
+                            <tspan x="30.87" y="28.8" class="st2 st3 st4">1,000m</tspan>
+                        </text>
+                        <rect x="54.65" y="752" class="st1" width="250.7" height="328" />
+                        <text transform="matrix(1 0 0 1 109.2612 909.7837)">
+                            <tspan x="0" y="0" class="st2 st3 st4">bathypelagic</tspan>
+                            <tspan x="28.94" y="28.8" class="st2 st3 st4">4,000m</tspan>
+                        </text>
+                        <rect x="42.62" y="1194" class="st1" width="274.76" height="274" />
+                        <text transform="matrix(1 0 0 1 98.437 1324.7837)">
+                            <tspan x="0" y="0" class="st2 st3 st4">abyssalpelagic</tspan>
+                            <tspan x="39.59" y="28.8" class="st2 st3 st4">6,000m</tspan>
+                        </text>
+                        <rect x="76.34" y="1572" class="st1" width="207.31" height="167" />
+                        <text transform="matrix(1 0 0 1 109.3931 1649.2837)">
+                            <tspan x="0" y="0" class="st2 st3 st4">hadalpelagic</tspan>
+                            <tspan x="27.58" y="28.8" class="st2 st3 st4">11,000m</tspan>
+                        </text>
+                        <path class="st5" d="M363,1673.21V1800H-3.92V124.97c0,0,61.67,58.35,78.11,103.21s77.19,131.6,77.19,131.6
+	s41.97,184.44,41.97,358.91c0,0-31.9,123.13,60.86,358.91c0,0,39.87,142.07,39.87,358.92C294.08,1436.54,280.29,1673.21,363,1673.21
+	" />
+                        <g>
+                            <path d="M358,1v1798.5H1V1H358 M359,0H0v1800.5h359V0L359,0z" />
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+
+            <a onclick="show_link(b)" id="sources" href="#sourcelinks">
+                <svg id="sourcesvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img">
+                    <title>Exit</title>
+                    <path data-name="layer1" fill="#184e63"
+                        d="M51 17.25L46.75 13 32 27.75 17.25 13 13 17.25 27.75 32 13 46.75 17.25 51 32 36.25 46.75 51 51 46.75 36.25 32 51 17.25z" />
+                </svg>
+
+                <span id="sourcespan">Sources</span>
+            </a>
+
+            <div id="sourcelinks">
+                <p class="linktext">1. “Open Ocean.” Oceana. 2020. <br>
+                    <a class="alink" target="_blank"
+                        href="https://oceana.org/marine-life/marine-science-and-ecosystems/open-ocean">https://oceana.org/marine-life/marine-science-and-ecosystems/open-ocean.</a>
+                </p>
+
+                <p class="linktext">2. Kennedy, Jennifer. "The Open Ocean." ThoughtCo, Jan. 2, 2018. <br>
+                    <a class="alink" target="_blank"
+                        href="https://www.thoughtco.com/open-ocean-pelagic-zone-2291774">https://www.thoughtco.com/open-ocean-pelagic-zone-2291774.</a>
+                </p>
+
+                <p class="linktext">3. NOAA. How deep is the ocean? National Ocean Service, 5 Oct. 2017. <br>
+                    <a class="alink" target="_blank"
+                        href="https://oceanservice.noaa.gov/facts/oceandepth.html">https://oceanservice.noaa.gov/facts/oceandepth.html.</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="ocdiv.js"></script>
+
+<script>
+    //Get the button:
+    navOutline = document.getElementById("navButton");
+    navText = document.getElementById("navbuttonText");
+    stZero = document.getElementById("st0");
+    stOne = document.getElementById("st1");
+    stTwo = document.getElementById("st2");
+    stThree = document.getElementById("st3");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+            navOutline.style.outline = "1px solid rgb(33, 33, 33)";
+            navText.style.color = "rgb(33, 33, 33)";
+            stZero.style.stroke = "rgb(33, 33, 33)";
+            stOne.style.stroke = "rgb(33, 33, 33)";
+            stTwo.style.stroke = "rgb(33, 33, 33)";
+            stThree.style.stroke = "rgb(33, 33, 33)";
+        } else {
+            navOutline.style.outline = "1px solid rgb(240, 240, 240)";
+            navText.style.color = "rgb(240, 240, 240)";
+            stZero.style.stroke = "rgb(240, 240, 240)";
+            stOne.style.stroke = "rgb(240, 240, 240)";
+            stTwo.style.stroke = "rgb(240, 240, 240)";
+            stThree.style.stroke = "rgb(240, 240, 240)";
+        }
+    }
+
+    let a = 1;
+
+    function show_hide() {
+        if (a === 1) {
+            document.getElementById("nav").style.display = "block";
+            document.getElementById("nav").style.opacity = "80%";
+            return a = 0;
+        } else {
+            document.getElementById("nav").style.display = "none";
+            document.getElementById("nav").style.opacity = "0%";
+            return a = 1;
+        }
+    }
+
+    let b = 1;
+
+    function show_link() {
+        if (a === 1) {
+            document.getElementById("sourcelinks").style.display = "flex";
+            return a = 0;
+        } else {
+            document.getElementById("sourcelinks").style.display = "none";
+            return a = 1;
+        }
+    }
+</script>
+
+</html>
