@@ -1,13 +1,22 @@
 let canvas;
 
+let ww, wh;
+
+function windowResized() {
+    resizeCanvas(ww, wh);
+}
+
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight / 2);
+  ww = windowWidth;
+  wh = windowHeight / 2;
+  canvas = createCanvas(ww, wh);
 }
 
 function draw() {
+  ww = windowWidth;
+  wh = windowHeight / 2;
   background(11, 43, 71);
   bothPulseRotate();
-
 }
 
 function bothPulseRotate() {

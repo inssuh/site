@@ -3,107 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>In Seok Suh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="topnav">
-            <div class="logo">
-                <a id="inlogo" href="index.html"> <svg version="1.1" x="0px" y="0px" viewBox="0 0 720 720"
-                        style="enable-background:new 0 0 720 720;" xml:space="preserve">
-                        <g>
-                            <rect x="0.1" y="0.41" width="89.95" height="719.59" />
-                            <rect x="389.6" y="73.03"
-                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -178.7684 434.0646)" width="89.95"
-                                height="719.59" />
-                        </g>
-                    </svg> </a>
-            </div>
+    <div id="topbar">
+        <a href="index.html" id="logo">
+            <div id="rect1"></div>
+            <div id="rect2"></div>
+            <div id="rectbox"></div>
 
-            <div id="dLine"></div>
+        </a>
 
-            <div class="about">
-                <a id="linknav" href="about.html">
-                    <div class="navtext">About</div>
-                </a>
-            </div>
+        <div id="nav">
+            <a href="index.html" class="workabout">work</a>
 
-        </div>
-
-        <div class="contentbody">
-            <div class="intro">
-                <h1><span>Hi, I'm</span> In.</h1>
-            </div>
-
-            <div id="dLine2"></div>
-
-            <a href="photistasub.html" class="projects">
-                <div class="projectstext">
-                    <h1>Photista Sub</h1>
-                    
-                    <p class="bio">Photista Sub <span>2020</span> is a series of mini projects exploring the topic of marine algae.</p>
-                </div>
-
-                <div class="mediasection">
-                    <img src="images/photista/flag.png" alt="">
-                </div>
-            </a>
-
-            <div id="dLine2"></div>
-
-            <a href="api.html" class="projects">
-                <div class="projectstext">
-                    <h1>Weather Art</h1>
-                    
-                    <p class="bio">The Weather Art p5.js sketch <span>2020</span> combines the weather api + the unsplash source api to produce generated image art.</p>
-                </div>
-
-                <div class="mediasection">
-                    <img src="images/api/Baltimore, Maryland.png" alt="">
-                </div>
-            </a>
-
-            <div id="dLine2"></div>
-
-            <a href="smule.html" class="projects">
-                <div class="projectstext">
-                    <h1>Smule Redesign</h1>
-                    
-                    <p class="bio">Smule Redesign <span>2020</span> is a redesign of the existing Smule mobile application.</p>
-                </div>
-
-                <div class="mediasection">
-                    <img src="images/smule/Smule2.jpg" alt="">
-                </div>
-            </a>
-
-            <div id="dLine2"></div>
-
-            <a href="sippin.html" class="projects">
-                <div class="projectstext">
-                    <h1>Sippin</h1>
-                    
-                    <p class="bio">Sippin <span>2019</span> is an audio visualizer motion graphic created in Adobe After Effects.</p>
-                </div>
-
-                <div class="mediasection">
-                    <img src="images/sippin/sippinpreview.jpg" alt="">
-                </div>
-            </a>
-
-            <div id="dLineEnd"></div>
+            <a class="workabout">about</a>
 
         </div>
 
     </div>
 
+    <div id="mainbody">
+        <a href="photi/photi.html" class="boxes">
+            <iframe src="https://editor.p5js.org/insuh/embed/vpaUNEvQK" frameborder="0" scrolling="no"> </iframe>
 
+            <div class="captions">Photi</div>
+        </a>
+
+        <a href="ozhole/ozhole.html" class="boxes">
+            <div class="images">
+                <img class="thumbnails" src="indexmedia/ozholecover.png" alt="">
+            </div>
+
+            <div class="captions">OzHole</div>
+        </a>
+
+        <div class="boxes">
+            <div class="images"></div>
+            <div class="captions">TimeV</div>
+        </div>
+
+        <div class="boxes">
+            <div class="images"></div>
+            <div class="captions">IN</div>
+        </div>
+
+        <div class="boxes">
+            <div class="images"></div>
+            <div class="captions">Motion Graphics</div>
+        </div>
+
+        <div class="boxes">
+            <div class="images"></div>
+            <div class="captions">Amsterdam 2032</div>
+        </div>
+
+    </div>
 
 </body>
 
