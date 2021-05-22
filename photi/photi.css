@@ -140,7 +140,6 @@ body {
 }
 
 .textsection {
-    margin-left: 1rem;
     width: 21vw;
 }
 
@@ -167,7 +166,8 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 59.5vw;
+    width: 55vw;
+    margin-right: 2rem;
 }
 
 .imagesection {
@@ -241,6 +241,7 @@ p {
 
     .content {
         width: 92vw;
+        margin-right: 0;
     }
 
     .image1,
