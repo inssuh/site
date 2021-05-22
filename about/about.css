@@ -180,6 +180,10 @@ p {
     line-height: 1.3rem;
 }
 
+#italics {
+    font-style: italic;
+}
+
 .links {
     display: flex;
     flex-direction: column;
