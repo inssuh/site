@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+#topbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 1vh;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+#logo {
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 100px;
+    height: 100px;
+}
+
+#rect1 {
+    position: absolute;
+    width: 12.5%;
+    height: 100%;
+    animation: colorc 4s infinite alternate;
+    z-index: 1;
+}
+
+@keyframes colorc {
+
+    0%,
+    20% {
+        background-color: #ee3125;
+    }
+
+    50% {
+        background-color: #212121;
+    }
+
+    80%,
+    100% {
+        background-color: #44ade2;
+    }
+}
+
+#rect2 {
+    position: absolute;
+    right: 0;
+    width: 12.5%;
+    height: 100%;
+    background-color: #212121;
+    transform-box: fill-box;
+    transform-origin: bottom left;
+    animation: rotat 4s infinite alternate;
+}
+
+@keyframes rotat {
+
+    0%,
+    20% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    80%,
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+#rectbox {
+    position: absolute;
+    height: 100%;
+    background-color: #212121;
+    animation: exwidth 4s infinite alternate;
+}
+
+@keyframes exwidth {
+
+    0%,
+    20% {
+        width: 12.5%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    80%,
+    100% {
+        width: 12.5%;
+    }
+}
+
+#nav {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.workabout {
+    color: #212121;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1em;
+    text-decoration: underline 0.2rem;
+    margin-left: 1.2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+.workabout:hover {
+    text-decoration-style: wavy;
+}
+
+#mainbody {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 22vh;
+    margin-bottom: 8vh;
+}
+
+.textsection {
+    width: 21vw;
+}
+
+#timevtitle {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 2.3em;
+    color: rgb(57, 181, 184);
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+#timevlink {
+    color: rgb(57, 181, 184);
+    text-decoration: underline 0.2rem;
+    font-weight: 600;
+}
+
+#spring {
+    color: rgb(95, 191, 71);
+    font-weight: 600;
+}
+
+#summer {
+    color: rgb(255, 187, 0);
+    font-weight: 600;
+}
+
+#fall {
+    color: rgb(198, 98, 48);
+    font-weight: 600;
+}
+
+#winter {
+    color: rgb(57, 181, 184);
+    font-weight: 600;
+}
+
+.content {
+    margin-right: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+}
+
+.imagesection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image1 {
+    width: 100%;
+    height: 39vw;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2vw;
+}
+
+@media (max-width: 750px) {
+    #topbar {
+        position: relative;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin-left: 0;
+        margin-top: 2vw;
+        width: 60px;
+        height: 60px;
+    }
+
+    #nav {
+        margin-right: 0;
+        margin-top: 2vw;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2vw;
+    }
+
+    .workabout {
+        margin-left: 0;
+    }
+
+    #mainbody {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textsection {
+        width: 92vw;
+        margin-bottom: 2vw;
+    }
+
+    .content {
+        width: 92vw;
+        margin-right: 0;
+    }
+
+    .images {
+        height: 71.5vw;
+    }
+
+}

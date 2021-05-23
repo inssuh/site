@@ -25,8 +25,8 @@ body {
     position: relative;
     margin-left: 2rem;
     margin-top: 2rem;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
 }
 
 #rect1 {
@@ -157,6 +157,10 @@ body {
     opacity: 70%;
 }
 
+#mg {
+    opacity: 70%;
+}
+
 iframe {
     width: 100%;
     height: 25vw;
@@ -174,6 +178,8 @@ iframe {
 
 .thumbnails {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .captions {
