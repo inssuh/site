@@ -258,8 +258,9 @@ p {
     }
 
     .image1,
-    .images,
-    #poster {
+    #poster,
+    #flag,
+    #still {
         height: 71.5vw;
     }
 

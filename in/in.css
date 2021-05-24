@@ -244,8 +244,8 @@ iframe {
     }
 
     .image1,
-    .images,
-    #poster {
+    .image2,
+    iframe {
         height: 71.5vw;
     }
 

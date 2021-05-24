@@ -231,7 +231,8 @@ p {
         margin-right: 0;
     }
 
-    .images {
+    .image1,
+    .image2 {
         height: 71.5vw;
     }
 
