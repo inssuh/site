@@ -143,6 +143,7 @@ body {
     text-decoration: none;
     color: rgb(33, 33, 33);
     width: 25vw;
+    height: auto;
     margin-left: 0.7vw;
     margin-right: 0.7vw;
     margin-bottom: 1.4vw;

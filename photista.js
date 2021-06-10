@@ -21,16 +21,6 @@ let bgC;
 
 let UI;
 
-let blankS = false;
-let twoC = true;
-let pulseR = false;
-let circleP = false;
-let bothpulseR = false;
-let fourR = false;
-let cornerCircR = false;
-let sideCircR = false;
-let mixedCircR = false;
-
 let ww, wh;
 
 
@@ -95,6 +85,7 @@ function setup() {
   textDropdown.position(10, 80 + 40);
   textDropdown.size(170);
   textDropdown.style('font-size', '0.9em');
+  textDropdown.style('font-family', 'Karla');
   textDropdown.option('Roboto');
   textDropdown.option('Oswald');
   textDropdown.option('Raleway');
@@ -236,77 +227,21 @@ function setup() {
   patternLabel.style('font-size', '0.9em');
   patternLabel.parent(UI);
 
-  p0 = createButton('0')
-  p0.position(10, 80 + 515);
-  p0.style('font-family', 'Karla');
-  p0.style('font-size', '0.9em');
-  p0.size(53, 25);
-  p0.mousePressed(blankSpace);
-  p0.parent(UI);
-
-  p1 = createButton('1')
-  p1.position(10 + 59, 80 + 515);
-  p1.style('font-family', 'Karla');
-  p1.style('font-size', '0.9em');
-  p1.size(53, 25);
-  p1.mousePressed(twoCircles);
-  p1.parent(UI);
-
-  p2 = createButton('2')
-  p2.position(10 + 118, 80 + 515);
-  p2.style('font-family', 'Karla');
-  p2.style('font-size', '0.9em');
-  p2.size(53, 25);
-  p2.mousePressed(pulseRotate);
-  p2.parent(UI);
-
-  p3 = createButton('3')
-  p3.position(10, 80 + 550);
-  p3.style('font-family', 'Karla');
-  p3.style('font-size', '0.9em');
-  p3.size(53, 25);
-  p3.mousePressed(circlePulse);
-  p3.parent(UI);
-
-  p4 = createButton('4')
-  p4.position(10 + 59, 80 + 550);
-  p4.style('font-family', 'Karla');
-  p4.style('font-size', '0.9em');
-  p4.size(53, 25);
-  p4.mousePressed(bothPulseRotate);
-  p4.parent(UI);
-
-  p5 = createButton('5')
-  p5.position(10 + 118, 80 + 550);
-  p5.style('font-family', 'Karla');
-  p5.style('font-size', '0.9em');
-  p5.size(53, 25);
-  p5.mousePressed(fourRect);
-  p5.parent(UI);
-
-  p6 = createButton('6')
-  p6.position(10, 80 + 585);
-  p6.style('font-family', 'Karla');
-  p6.style('font-size', '0.9em');
-  p6.size(53, 25);
-  p6.mousePressed(cornerCircRect);
-  p6.parent(UI);
-
-  p7 = createButton('7')
-  p7.position(10 + 59, 80 + 585);
-  p7.style('font-family', 'Karla');
-  p7.style('font-size', '0.9em');
-  p7.size(53, 25);
-  p7.mousePressed(sideCircRect);
-  p7.parent(UI);
-
-  p8 = createButton('8')
-  p8.position(10 + 118, 80 + 585);
-  p8.style('font-family', 'Karla');
-  p8.style('font-size', '0.9em');
-  p8.size(53, 25);
-  p8.mousePressed(mixedCircRect);
-  p8.parent(UI);
+  textDropdown = createSelect();
+  textDropdown.position(10, 80 + 515);
+  textDropdown.size(170);
+  textDropdown.style('font-size', '0.9em');
+  textDropdown.style('font-family', 'Karla');
+  textDropdown.option('Pattern 1');
+  textDropdown.option('Pattern 2');
+  textDropdown.option('Pattern 3');
+  textDropdown.option('Pattern 4');
+  textDropdown.option('Pattern 5');
+  textDropdown.option('Pattern 6');
+  textDropdown.option('Pattern 7');
+  textDropdown.option('Pattern 8');
+  textDropdown.option('No Pattern');
+  textDropdown.parent(UI);
 
 }
 
@@ -345,24 +280,24 @@ function draw() {
 
   background(bgC);
 
-  if (blankS) {
-    blankSpace();
-  } else if (twoC) {
+  if (textDropdown.value() == 'Pattern 1') {
     twoCircles();
-  } else if (pulseR) {
+  } else if (textDropdown.value() == 'Pattern 2') {
     pulseRotate();
-  } else if (circleP) {
+  } else if (textDropdown.value() == 'Pattern 3') {
     circlePulse();
-  } else if (bothpulseR) {
+  } else if (textDropdown.value() == 'Pattern 4') {
     bothPulseRotate();
-  } else if (fourR) {
+  } else if (textDropdown.value() == 'Pattern 5') {
     fourRect();
-  } else if (cornerCircR) {
+  } else if (textDropdown.value() == 'Pattern 6') {
     cornerCircRect();
-  } else if (sideCircR) {
+  } else if (textDropdown.value() == 'Pattern 7') {
     sideCircRect();
-  } else if (mixedCircR) {
+  } else if (textDropdown.value() == 'Pattern 8') {
     mixedCircRect();
+  } else if (textDropdown.value() == 'No Pattern') {
+    blankSpace();
   }
 
   noStroke();
@@ -411,29 +346,11 @@ function saveFile() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function blankSpace() {
-  blankS = true;
-  twoC = false;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   noStroke();
 }
 
 function twoCircles() {
-  blankS = false;
-  twoC = true;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -457,15 +374,6 @@ function twoCircles() {
 }
 
 function pulseRotate() {
-  blankS = false;
-  twoC = false;
-  pulseR = true;
-  circleP = false;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -489,15 +397,6 @@ function pulseRotate() {
 }
 
 function circlePulse() {
-  blankS = false;
-  twoC = false;
-  pulseR = false;
-  circleP = true;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -521,15 +420,6 @@ function circlePulse() {
 }
 
 function bothPulseRotate() {
-  blankS = false;
-  twoC = false;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = true;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -553,15 +443,6 @@ function bothPulseRotate() {
 }
 
 function fourRect() {
-  blankS = false;
-  twoC = false;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = false;
-  fourR = true;
-  cornerCircR = false;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -601,15 +482,6 @@ function fourRect() {
 }
 
 function cornerCircRect() {
-  blankS = false;
-  twoC = false;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = true;
-  sideCircR = false;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);
@@ -649,15 +521,6 @@ function cornerCircRect() {
 }
 
 function sideCircRect() {
-  blankS = false;
-  twoC = false;
-  pulseR = false;
-  circleP = false;
-  bothpulseR = false;
-  fourR = false;
-  cornerCircR = false;
-  sideCircR = true;
-  mixedCircR = false;
   noFill();
   stroke(lineC);
   rectMode(CENTER);

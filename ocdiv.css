@@ -183,6 +183,7 @@ h1 {
 
 .contentSection {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
@@ -225,9 +226,10 @@ p {
 
 #imageSection {
   display: flex;
-  justify-content: flex-end;
-  align-self: flex-start;
-  width: 33%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 33%;
 }
 
 #oceanSvg {
