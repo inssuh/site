@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Seok Suh</title>
+    <link rel="stylesheet" href="proj1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png">
+
+</head>
+
+<body>
+
+    <div id="section1">
+        <div id="name"> <a href="/index.html">In Seok Suh</a> </div>
+        <div id="hamburger">
+            <button onclick="show_hide(a)">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
+        </div>
+        <div id="nav">
+            <a id="projects-link" class="link-space" href="/index.html">Projects</a>
+            <a id="about-link" class="link-space" href="/about.html">About</a>
+            <a class="link-space" href="/images/Suh_InSeok_Resume.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="break2"></div>
+        <div class="break2"></div>
+        <div class="break1"></div>
+
+        <div class="halfSection">
+            <p id="projTitle">Ejji Label</p>
+            <div class="break1"></div>
+            <p id="projDesc">Ejji label is a team project created together with designer and illustrator <a
+                    target="_blank" class="bold" href="https://www.instagram.com/katelena.kal/">Kate Kalafatis</a> (in
+                charge of
+                finishing the front-side illustrations and designs) and myself (in charge of finishing the back-side
+                designs). The project features two label designs for two different sauces, created for the
+                <a class="bold" target="_blank" href="https://ejjiramen.com/">Ejji</a> company located in the
+                state of Baltimore, Maryland.</p>
+        </div>
+
+        <div class="break2"></div>
+
+    </div>
+
+    <div id="section3">
+        <img src="sambalFinal.png" alt="" class="img-100" onContextMenu="return false;">
+
+        <div class="break2"></div>
+
+        <img src="malaFinal.png" alt="" class="img-100" onContextMenu="return false;">
+
+        <div class="break2"></div>
+    </div>
+
+    <div class="section4">
+        <div class="halfSection">
+            <p class="subTitle">Moodboard</p>
+            <div class="break1"></div>
+            <p class="projDesc2">The moodboard explores popular condiments from a variety of brands. Graphics and
+                illustrations are an essential part of
+                branding, especially in label designs, so we explored at how different illustrations work in unison with
+                their brands.</p>
+        </div>
+
+        <img src="moodboardFinal.png" alt="" class="img-45" onContextMenu="return false;">
+    </div>
+
+    <div class="break2"></div>
+
+    <div class="section4">
+        <div class="halfSection">
+            <p class="subTitle">Label Iterations</p>
+            <div class="break1"></div>
+            <p class="projDesc2">We went through several different label iterations, exploring different layouts of the typography and graphics, 
+                to provide a variety of designs for the client to choose from. Our goal was to create a design that incorporated all the necessary graphic
+                elements while not feeling cluttered.</p>
+        </div>
+
+        <img src="sauceIterations.png" alt="" class="img-45" onContextMenu="return false;">
+    </div>
+
+    <div class="break2"></div>
+
+    <div class="section4">
+        <img src="styleGuide.jpg" alt="" class="img-100" onContextMenu="return false;">
+    </div>
+
+    <div class="break2"></div>
+
+    <div id="end-section">
+        <p>Created by @In Seok Suh</p>
+    </div>
+
+</body>
+
+<script>
+    let a = 1;
+
+    function show_hide() {
+        if (a === 1) {
+            document.getElementById("nav").style.display = "flex";
+            document.getElementById("nav").style.opacity = "99%";
+            return a = 0;
+        } else {
+            document.getElementById("nav").style.display = "none";
+            document.getElementById("nav").style.opacity = "0%";
+            return a = 1;
+        }
+    }
+</script>
+
+</html>

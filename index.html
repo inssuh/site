@@ -6,74 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Seok Suh</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+
 </head>
 
 <body>
-    <div id="topbar">
-        <a href="index.html" id="logo">
-            <div id="rect1"></div>
-            <div id="rect2"></div>
-            <div id="rectbox"></div>
 
-        </a>
-
-        <div id="nav">
-            <a href="index.html" class="workabout">work</a>
-
-            <a href="about/about.html" class="workabout">about</a>
-
+    <div id="section1">
+        <div id="name"> <a href="index.html">In Seok Suh</a> </div>
+        <div id="hamburger">
+            <button onclick="show_hide(a)">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
         </div>
-
+        <div id="nav">
+            <a id="projects-link" class="link-space" href="index.html">Projects</a>
+            <a id="about-link" class="link-space" href="about.html">About</a>
+            <a class="link-space" href="images/Suh_InSeok_Resume.pdf" target="_blank">Resume</a>
+        </div>
     </div>
 
-    <div id="mainbody">
-        <a href="photi/photi.html" class="boxes">
-            <iframe src="https://editor.p5js.org/insuh/embed/vpaUNEvQK" frameborder="0" scrolling="no"> </iframe>
+    <div id="section2">
+        <div class="break2"></div>
+        <div class="break2"></div>
+        <div class="break2"></div>
+        <p id="hello">안녕하세요 👨‍🎨</p>
+        <div class="break2"></div>
+        <div class="break2"></div>
+        <p>My name is In, and I am a Graphic Designer.</p>
+    </div>
 
-            <div class="captions">Photi</div>
+    <div class="break2"></div>
+    <div class="break2"></div>
+    <div class="break2"></div>
+
+    <div id="section3">
+        <a class="box-links" href="proj1/proj1.html">
+            <div class="thumbnails"> <img src="images/proj1.png" alt="" onContextMenu="return false;"> </div>
+            <p class="project-titles">Ejji Label</p>
         </a>
-
-        <a href="ozhole/ozhole.html" class="boxes">
-            <div class="images">
-                <img id="ozt" class="thumbnails" src="indexmedia/ozholecover.png" alt="Thumbnail for OzHole project">
-            </div>
-
-            <div class="captions">OzHole</div>
+        <a class="box-links" href="proj2/proj2.html">
+            <div class="thumbnails"> <img src="images/proj2.png" alt="" onContextMenu="return false;"> </div>
+            <p class="project-titles">Photista Website</p>
         </a>
-
-        <a href="timev/timev.html" class="boxes">
-            <div class="images">
-                <img src="indexmedia/timevcover.png" alt="Thumbnail for TimeV project" class="thumbnails">
-            </div>
-            <div class="captions">TimeV</div>
+        <!-- <a class="box-links" href="">
+            <div class="thumbnails"></div>
+            <p class="project-titles">HH Website</p>
         </a>
-
-        <a href="in/in.html" class="boxes">
-            <div class="images">
-                <img src="indexmedia/incover.jpg" alt="Thumbnail for IN project" class="thumbnails">
-            </div>
-            <div class="captions">IN</div>
+        <a class="box-links" href="">
+            <div class="thumbnails"></div>
+            <p class="project-titles">Amsterdam 2032 Olympics Book</p>
+        </a> -->
+        <a class="box-links" href="proj3/proj3.html">
+            <div class="thumbnails"> <img src="images/proj3.png" alt="" onContextMenu="return false;"> </div>
+            <p class="project-titles">Ozone Hole Progress Book</p>
         </a>
+    </div>
 
-        <a href="motiongraphics/motiongraphics.html" class="boxes">
-            <div class="images">
-                <img src="indexmedia/motioncover.jpg" alt="Thumbnail for Motion Graphics project" class="thumbnails">
-            </div>
-            <div class="captions">Motion Graphics</div>
-        </a>
-
-        <a href="amsterdam2032/amsterdam2032.html" class="boxes">
-            <div class="images">
-                <img src="indexmedia/amsterdam2032cover.png" alt="Thumbnail for Amsterdam 2032 project" id="amst" class="thumbnails">
-            </div>
-            <div class="captions">Amsterdam 2032</div>
-        </a>
-
+    <div id="end-section">
+        <p>Created by @In Seok Suh</p>
     </div>
 
 </body>
+
+<script>
+    let a = 1;
+
+    function show_hide() {
+        if (a === 1) {
+            document.getElementById("nav").style.display = "flex";
+            document.getElementById("nav").style.opacity = "99%";
+            return a = 0;
+        } else {
+            document.getElementById("nav").style.display = "none";
+            document.getElementById("nav").style.opacity = "0%";
+            return a = 1;
+        }
+    }
+</script>
 
 </html>

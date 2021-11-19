@@ -1,0 +1,233 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.break1 {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.break2 {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#section1 {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+p {
+    margin: 0;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    width: 47.5%;
+    font-size: 1rem;
+}
+
+#nav {
+    display: flex;
+    width: 47.5%;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.9375rem;
+}
+
+#about-link {
+    text-decoration: underline;
+}
+
+.link-space {
+    margin-left: 2rem;
+}
+
+#hamburger {
+    display: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+#italic {
+    font-style: italic;
+}
+
+.bio {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+img {
+    width: 60%;
+}
+
+#qAsection {
+    width: 50%;
+}
+
+.questions {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.answers {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+span {
+    font-style: italic;
+}
+
+#socials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+}
+
+.socials {
+    overflow-wrap: break-word;
+    width: 90%;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.socials-links {
+    color: white;
+    opacity: 50%;
+}
+
+.socials-links:hover {
+    opacity: 100%;
+}
+
+#end-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 770px) {
+    html {
+        font-size: 15px;
+    }
+
+    .link-space {
+        margin: 0;
+    }
+
+    #hamburger {
+        display: flex;
+        width: 47.5%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        display: none;
+    }
+
+    button:hover {
+        opacity: 70%;
+    }
+
+    #section2 #section3 {
+        width: 90%;
+    }
+
+    #section3 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #pfp {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #qAsection {
+        width: 90%;
+    }
+
+}
