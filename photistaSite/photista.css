@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#logolink {
+  display: block;
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  z-index: 10;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#logolink:hover #st0, #logolink:hover #st1, #logolink:hover #st2, #logolink:hover #st3 {
+  stroke-width: 20;
+}
+
+#logoid {
+  width: 3rem;
+}
+
+#navButton {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 22px;
+  right: 22px;
+  width: 5rem;
+  height: 2rem;
+  outline: 1px solid rgb(240, 240, 240);
+  z-index: 9;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#navButton:hover {
+  outline: 2px solid rgb(240, 240, 240);
+}
+
+#navbuttonText {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
+  color: rgb(240, 240, 240);
+}
+
+#navButton:hover {
+  outline-width: 2px;
+}
+
+#navButton:hover #navbuttonText {
+  font-weight: 500;
+}
+
+#nav {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 20rem;
+  height: 100vh;
+  background-color: #f0f0f0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+#menuTitle {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  font-size: 1.1em;
+  font-family: 'Zilla Slab', sans-serif;
+}
+
+#exit {
+  display: flex;
+  opacity: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border: none;
+  outline: 1px solid #212121;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#exitsvg {
+  transition: all 0.5s ease-in-out;
+}
+
+#exit:hover {
+  opacity: 100%;
+}
+
+#exit:hover #exitsvg {
+  transform: rotate(360deg);
+}
+
+.menu {
+  display: flex;
+  font-family: 'Zilla Slab', sans-serif;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 1.5em;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 1.5em;
+  font-family: 'Zilla Slab', sans-serif;
+}
+
+#photistapan {
+  margin-left: 30px;
+}
+
+.navLink {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: rgb(0, 140, 200);
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+@media (max-width: 750px) {
+  #nav {
+    width: 250px;
+  }
+  
+}
