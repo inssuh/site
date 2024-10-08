@@ -125,6 +125,11 @@ button {
     width: 45%;
 }
 
+.img-border {
+    width: 45%;
+    outline: 1px solid rgba(0, 0, 0, 0.300);
+}
+
 .section4 {
     display: flex;
     flex-direction: row;
@@ -223,6 +228,11 @@ button {
 
     .img-45 {
         width: 100%;
+    }
+
+    .img-border {
+        width: 100%;
+        margin-top: 1rem;
     }
 
 }
